@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Open+Sans:wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Dancing Script', 'Open Sans', sans-serif;
+    padding: 0 30px;
+    background-color: #f7f1e3;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 3rem;
+    color:#cd6133;
+    margin-bottom: 20px;
+}
+
+.card {
+    max-width: 700px;
+    font-family: 'Open Sans';
+    background: #fff;   
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.card .qaustion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qaustion p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #303952;
+    letter-spacing: 2px;
+}
+.qaustion button {
+    font-size: 25px;
+    background: transparent;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    color: #cd6133;
+    transition: transform .3s ease;
+}
+.qaustion button:hover {
+    transform: rotate(90deg);
+}
+.caption {
+    color:#596275;
+    letter-spacing: 1.5px;
+    display: none;
+}
+.caption p {
+    border-top: 1px solid #aaa69d;
+    padding: 10px 0;
+    text-align: justify;
+    margin-top: 10px;
+}
+.caption.active{
+    display: block ;
+}
+
+
+
