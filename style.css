@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Dancing Script', 'Open Sans', sans-serif;
     padding: 0 30px;
     background-color: #f7f1e3;
@@ -23,9 +23,11 @@ h1 {
     color:#cd6133;
     margin-bottom: 20px;
 }
+.container {
+    max-width: 700px;
+}
 
 .card {
-    max-width: 700px;
     font-family: 'Open Sans';
     background: #fff;   
     padding: 30px 20px;
@@ -33,6 +35,7 @@ h1 {
     margin: 20px;
 }
 .card .qaustion {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +45,7 @@ h1 {
     font-weight: 200;
     color: #303952;
     letter-spacing: 2px;
+    margin-right: 100px;
 }
 .qaustion button {
     font-size: 25px;
@@ -51,6 +55,9 @@ h1 {
     cursor: pointer;
     color: #cd6133;
     transition: transform .3s ease;
+}
+.qaustion button i {
+    pointer-events: none;
 }
 .qaustion button:hover {
     transform: rotate(90deg);
